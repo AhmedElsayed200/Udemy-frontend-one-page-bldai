@@ -183,7 +183,7 @@
 .content-txt {
   font-family: sans-serif, Arial, Helvetica, serif;
   font-size: 1.6rem;
-  line-height: 1.9rem;
+  line-height: 2rem;
   font-weight: 300;
 }
 
@@ -201,7 +201,191 @@
 }
 
 /*********************** course section ***********************/
+/* course container */
 .courses-container {
-  background-color: blue;
-  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 85%;
+  margin: auto;
+  padding: 40px 0px 40px 20px;
+}
+
+/* course headline */
+.courses-headline {
+  font-family: "Lora", serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+/* course sub-headline */
+.courses-subheadline {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+/* courses navigator */
+.courses-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  column-gap: 20px;
+}
+
+.courses-nav button {
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-family: sans-serif, Arial, Helvetica, serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #6a6f73;
+  padding-left: 5px;
+}
+
+.courses-nav button:hover {
+  color: #000000;
+}
+
+/* courses view */
+.courses-viewer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+
+  padding: 30px 20px;
+  border: 1px solid #d1d7dc;
+}
+
+.courses-viewer-headline {
+  font-family: sans-serif, Arial, Helvetica, serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.courses-viewer-subheadline {
+  font-family: sans-serif, Arial, Helvetica, serif;
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+  font-weight: 300;
+  max-width: 800px;
+  max-height: 70px;
+  overflow: hidden;
+}
+
+/* explore course button */
+.explore-course {
+  font-family: sans-serif, Arial, Helvetica, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  padding: 10px;
+  width: 120px;
+  cursor: pointer;
+}
+
+.explore-course:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* courses cards */
+.courses-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.course-card {
+  cursor: pointer;
+  width: 233px;
+}
+
+/* course card images */
+.course-img {
+  border: 1px solid #d1d7dc;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #000000;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.course-img:hover .filter {
+  display: block;
+}
+
+/* course card content */
+.course-img ~ div {
+  margin-top: 10px;
+  font-family: sans-serif, Arial, Helvetica, serif;
+}
+
+.course-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.course-authors {
+  font-size: 1.1rem;
+  color: #6a6f73;
+}
+
+.course-rating {
+  font-size: 1.1rem;
+  color: #b4690e;
+  font-weight: 700;
+}
+
+.fa-star {
+  color: #000000;
+}
+
+.checked {
+  color: rgb(255, 166, 0);
+}
+
+.raters {
+  color: #6a6f73;
+  font-weight: 300;
+}
+
+.new-price {
+  display: inline-block;
+  font-family: sans-serif, Arial, Helvetica, serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-right: 6px;
+}
+
+.old-price {
+  display: inline-block;
+  font-family: sans-serif, Arial, Helvetica, serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #6a6f73;
+  text-decoration: line-through;
+}
+
+.best-seller {
+  width: 70px;
+  background-color: #eceb98;
+  color: #3d3c0a;
+  font-family: sans-serif, Arial, Helvetica, serif;
+  font-weight: 700;
+  padding: 6px 0px;
+  text-align: center;
 }
