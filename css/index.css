@@ -20,8 +20,10 @@
   flex-direction: row;
   align-items: center;
   column-gap: 20px;
-  padding: 20px;
+  padding: 10px 20px;
   background-color: #ffffff;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+  z-index: 1;
 }
 
 /* udemy logo */
@@ -150,8 +152,52 @@
 }
 
 /*********************** header ***********************/
+/* header container */
 .header {
-  background-color: aquamarine;
+  background-color: #fafafa;
+  width: 85%;
+  margin: auto;
+  position: relative;
+}
+
+/* header text */
+.header-txt {
+  display: inline-block;
+  width: 35%;
+  background-color: #ffffff;
+  line-height: 3rem;
+  position: absolute;
+  top: 65px;
+  left: 60px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+  padding: 2.4rem;
+}
+
+.catch-txt {
+  font-family: serif, Arial, Helvetica, sans-serif;
+  font-size: 2.9rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.content-txt {
+  font-family: sans-serif, Arial, Helvetica, serif;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-weight: 300;
+}
+
+/* header image */
+.header-img {
+  width: 20%;
+  top: 0px;
+  left: 230px;
+  float: right;
+  margin: 30px 20% 30px 0px;
+}
+
+.header-img > img {
+  width: 100%;
 }
 
 /*********************** course section ***********************/
