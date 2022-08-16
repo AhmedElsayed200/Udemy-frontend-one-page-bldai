@@ -207,9 +207,9 @@
   display: flex;
   flex-direction: column;
   row-gap: 15px;
-  width: 85%;
+  width: 100%;
   margin: auto;
-  padding: 40px 0px 40px 20px;
+  padding: 40px 20px 40px 20px;
 }
 
 /* course headline */
@@ -257,7 +257,6 @@
   display: flex;
   flex-direction: column;
   row-gap: 15px;
-
   padding: 30px 20px;
   border: 1px solid #d1d7dc;
 }
@@ -299,7 +298,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  row-gap: 40px;
+  gap: 40px 30px;
   justify-content: flex-start;
 }
 
