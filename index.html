@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- local stylesheet css -->
     <link rel="stylesheet" href="resources/css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Rubik:wght@500;600&family=Ubuntu:wght@300;400&display=swap"
       rel="stylesheet"
@@ -18,12 +20,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
     <title>Udemy Home page</title>
   </head>
   <body>
     <div class="app-wrapper">
       <!----------------- nav bar ----------------->
-      <nav class="navbar">
+      <nav id="navbar">
         <div class="menu-3lines">
           <img src="resources/images/menu_3lines.png" alt="menu" />
         </div>
@@ -204,8 +213,84 @@
           </div>
         </div>
       </section>
+      <!----------------- top categories ----------------->
+      <section class="container mx-auto mb-5">
+        <p class="top-categories">Top categories</p>
+        <div class="row">
+          <div class="col-12 col-sm-4 col-lg-3">
+            <img
+              src="resources/images/design.jpg"
+              class="img-fluid"
+              alt="design"
+            />
+            <p class="py-3 title-category">Design</p>
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3">
+            <img
+              src="resources/images/development.jpg"
+              class="img-fluid"
+              alt="development"
+            />
+            <p class="py-3 title-category">Development</p>
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3">
+            <img
+              src="resources/images/marketing.jpg"
+              class="img-fluid"
+              alt="marketing"
+            />
+            <p class="py-3 title-category">Marketing</p>
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3">
+            <img
+              src="resources/images/it-software.jpg"
+              class="img-fluid"
+              alt="it and software"
+            />
+            <p class="py-3 title-category">IT and Software</p>
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3">
+            <img
+              src="resources/images/personal-development.jpg"
+              class="img-fluid"
+              alt="personal development"
+            />
+            <p class="py-3 title-category">Personal Development</p>
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3">
+            <img
+              src="resources/images/business.jpg"
+              class="img-fluid"
+              alt="business"
+            />
+            <p class="py-3 title-category">Business</p>
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3">
+            <img
+              src="resources/images/photography.jpg"
+              class="img-fluid"
+              alt="photography"
+            />
+            <p class="py-3 title-category">Photography</p>
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3">
+            <img
+              src="resources/images/music.jpg"
+              class="img-fluid"
+              alt="music"
+            />
+            <p class="py-3 title-category">Music</p>
+          </div>
+        </div>
+      </section>
     </div>
-
+    <!-- local script file js -->
     <script src="resources/js/main.js"></script>
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

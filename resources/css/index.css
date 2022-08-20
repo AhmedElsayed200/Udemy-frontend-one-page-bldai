@@ -15,7 +15,7 @@
 
 /*********************** navbar ***********************/
 /* navbar container */
-.navbar {
+#navbar {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -394,6 +394,21 @@
   text-align: center;
 }
 
+/*********************** top categories ***********************/
+/* headline */
+.top-categories {
+  font-family: sans-serif, Arial, Helvetica, serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+/* categories titles */
+.title-category {
+  font-family: sans-serif, Arial, Helvetica, serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
 /*********************** different screens ***********************/
 @media screen and (max-width: 1300px) {
   .header {
@@ -430,7 +445,7 @@
     display: none;
   }
 
-  .navbar {
+  #navbar {
     justify-content: space-between;
   }
 
